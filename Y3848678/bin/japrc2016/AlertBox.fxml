@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="226.0" prefWidth="492.0" xmlns="http://javafx.com/javafx/8.0.65" xmlns:fx="http://javafx.com/fxml/1" fx:studyPlannerGUI="japrc2016.AlertBoxController">
+   <children>
+      <Button fx:id="gui_addTopic_addTopicButton" layoutX="370.0" layoutY="175.0" mnemonicParsing="false" onAction="#onAddTopic_AddTopicButton" prefHeight="27.0" prefWidth="100.0" text="Add" />
+      <Button fx:id="gui_addTopic_cancelButton" layoutX="264.0" layoutY="175.0" mnemonicParsing="false" onAction="#onAddTopic_cancelButton" prefHeight="27.0" prefWidth="90.0" text="Cancel" />
+      <TextField fx:id="gui_addTopic_TopicNameInput" layoutX="104.0" layoutY="73.0" onAction="#onAddTopic_TopicNameInput" prefHeight="27.0" prefWidth="368.0" promptText="e.g. Maths" />
+      <TextField fx:id="gui_onAddTopic_TopicDurationInput" layoutX="104.0" layoutY="109.0" onAction="#onAddTopic_TopicDurationInput" prefHeight="27.0" prefWidth="368.0" promptText="e.g. 150" />
+      <Text layoutX="14.0" layoutY="91.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Topic Name:" />
+      <Text layoutX="14.0" layoutY="127.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Duration:" />
+      <Text layoutX="198.0" layoutY="43.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Add Topic">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Text>
+   </children>
+</Pane>

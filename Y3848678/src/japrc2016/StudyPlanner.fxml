@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="1200.0" xmlns="http://javafx.com/javafx/8.0.65" xmlns:fx="http://javafx.com/fxml/1" fx:studyPlannerGUI="japrc2016.StudyPlannerController">
+   <children>
+      <TableView fx:id="gui_topicTable" layoutX="30.0" layoutY="50.0" prefHeight="612.0" prefWidth="278.0">
+        <columns>
+          <TableColumn fx:id="gui_topicName" prefWidth="189.3333282470703" text="Topic" />
+          <TableColumn fx:id="gui_topicDuration" prefWidth="85.66667175292969" text="Duration" />
+        </columns>
+      </TableView>
+      <TableView fx:id="gui_planTable" layoutX="784.0" layoutY="50.0" prefHeight="619.0" prefWidth="387.0">
+        <columns>
+          <TableColumn fx:id="gui_topicPlanName" prefWidth="310.3333740234375" text="Topic" />
+          <TableColumn fx:id="gui_topicPlanTime" prefWidth="75.6666259765625" text="Time" />
+        </columns>
+      </TableView>
+      <TextField layoutX="479.0" layoutY="52.0" prefHeight="27.0" prefWidth="159.0" />
+      <TextField layoutX="478.0" layoutY="103.0" prefHeight="27.0" prefWidth="159.0" />
+    <AnchorPane layoutX="577.0" layoutY="435.0" minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0" />
+      <Label layoutX="356.0" layoutY="57.0" text="Topic Name:" />
+      <Label layoutX="357.0" layoutY="108.0" text="Topic Duration:" />
+      <Button fx:id="gui_addTopic" layoutX="478.0" layoutY="149.0" mnemonicParsing="false" onAction="#onTopicClick" prefHeight="27.0" prefWidth="100.0" text="Add Topic" />
+      <VBox layoutX="658.0" layoutY="54.0" prefHeight="200.0" prefWidth="100.0" spacing="20.0">
+         <children>
+            <Button fx:id="gui_loadPlan" mnemonicParsing="false" onAction="#onLoadClick" prefWidth="100.0" text="Load Plan">
+               <VBox.margin>
+                  <Insets />
+               </VBox.margin>
+            </Button>
+            <Button fx:id="gui_deleteTopic" mnemonicParsing="false" onAction="#onDeleteTopicClick" prefHeight="27.0" prefWidth="100.0" text="Delete Topic" />
+            <Button fx:id="gui_addEvent" mnemonicParsing="false" onAction="#onAddEventClick" prefHeight="27.0" prefWidth="100.0" text="Add Event" />
+            <Button fx:id="gui_deleteEvent" mnemonicParsing="false" onAction="#onDeleteEventClick" prefWidth="100.0" text="Delete Event" />
+            <Button fx:id="gui_setTarget" mnemonicParsing="false" onAction="#onSetTargetClick" prefHeight="27.0" prefWidth="100.0" text="Set Target" />
+            <Button fx:id="gui_savePlan" mnemonicParsing="false" onAction="#onSaveClick" prefWidth="100.0" text="Save Plan" />
+            <Button fx:id="gui_generate" mnemonicParsing="false" onAction="#onGenereateClick" prefWidth="100.0" text="Generate" />
+         </children>
+      </VBox>
+   </children>
+</Pane>
